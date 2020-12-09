@@ -80,7 +80,7 @@ int
     char *raw;
     raw = (char *)p;
     fprintf(stderr, "DEBUG: opm %02x%02x%02x%02x %02x%02x l=%d.\n",
-      raw [0], raw [1], raw [2], raw [3], raw [4], raw [5], m->lth);
+      (unsigned char)raw [0], (unsigned char)raw [1], (unsigned char)raw [2], (unsigned char)raw [3], (unsigned char)raw [4], (unsigned char)raw [5], m->lth);
   };
 
   status = ST_MSG_TOO_SHORT;
